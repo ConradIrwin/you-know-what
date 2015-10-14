@@ -21,13 +21,22 @@
     top: 61px;
   }
 
+  .stop section.bicycle {
+    transform: scale(0.2) rotate(-35deg);
+  }
+
+  .stop section.bicycle-top {
+    transform: translateY(80px) translateX(-15px);
+  }
+
   section.bicycle {
     background-image: url(img/bicycle.svg);
     height: 163px;
+    width: 218px;
     left: 359px;
     top: 243px;
+    transform-origin: bottom left;
   }
-
 
   section.california {
     background-image: url(img/california.svg);
@@ -86,13 +95,18 @@
     position: absolute;
     top: 0px;
     left: 0px;
+    transition: transform ease-in-out 2s;
   }
 </style>
 
 
-<div class="logo">
+<div class="logo stop">
   <section class="banner"></section>
-  <section class="bicycle"></section>
+  <section class="bicycle-init">
+    <section class="bicycle-top">
+      <section class="bicycle"></section>
+    </section>
+  </section>
   <section class="bridge"></section>
   <section class="dates"></section>
   <section class="great-britain"></section>
@@ -105,3 +119,19 @@
   <section class="thistle"></section>
   <section class="vignette"></section>
 </div>
+
+<script>
+  var div = document.querySelector("div")
+  document.body.addEventListener('click', function () {
+
+    if (div.classList.contains("go")) {
+      div.classList.add("stop");
+      div.classList.remove("go");
+
+    } else {
+      div.classList.add("go");
+      div.classList.remove("stop");
+    }
+
+  });
+</script>
