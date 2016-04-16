@@ -3,6 +3,10 @@
 <meta name="viewport" content="width=1300px,min-scale=0.5">
 <meta charset="utf-8">
 <link rel="icon" href="favicon.ico">
+<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="jquery.modal.css" type="text/css" media="screen" />
+
 <title>Molly & Conrad</title>
 
 <style>
@@ -94,11 +98,115 @@
           </div>
           <div class="buttons">
             <center>
-              <!-- <img class="rsvp-button" src="img/button-attire.svg"/> -->
+
+              <!--  what to wear modal -->
+
+              <div id="dress-modal" style="display:none;">
+                <img class="dress-img" src="img/Monrad_mermaiddress.jpg"/>
+                <img class="dress-img" src="img/Monrad_cocktailgirldressthing.jpg"/> 
+                <img class="dress-img" src="img/Monrad_princessdress.jpg"/> 
+                <img class="dress-img" src="img/Monrad_MAN.jpg"/>
+                <center><p>
+                  <a href="#" rel="modal:close">Close</a>
+                </p>
+                </center>
+              </div>
+
+              <a href="#dress-modal" rel="modal:open">
+                <img class="rsvp-button" src="img/button-attire.svg"/> 
+              </a> 
+              <!--  end of what to wear modal -->
+
               <a href="/rsvp">
                 <img class="rsvp-button" src="img/button-rsvp.svg"/>
               </a>
-              <!-- <img class="rsvp-button" src="img/button-accommodation.svg"/> -->
+
+
+              <!--  where to stay US modal -->
+
+              <div id="US-places" style="display:none;">
+                <center><img src="img/bridge.svg" style="height:50px"/>
+                  <h2>Places to Stay in San Francisco</h2>
+                  <br>
+                  <br>
+
+                  <a href="https://www.airbnb.com/s/San-Francisco--CA--United-States?source=hdr&checkin=06%2F10%2F2016&checkout=06%2F12%2F2016" target="_blank">
+                    <img src="img/airbnb.jpeg" style="height: 80px"/>
+                    <h1>AirBnb</h1>
+                  </a> 
+                  <p>
+                    This is San Francisco! Home of AirBnb. 
+                    <br>This is our #1 suggested method of finding a place to stay.
+                    <br>Good Neighorhoods close by: Bernal Heights, Potrero Hill, Castro, Mission, Noe Valley
+                  </p>
+                  <br>
+
+                  <a href="http://www.noesnest.com/" target="_blank">
+                    <img src="img/noesnest.jpg" style="height: 100px"/>
+                    <h1>Noe's Next Bed and Breakfast</h1>
+                  </a> 
+                  <p>
+                    Address: 1257 Guerrero Street, San Francisco, CA 94110
+                    <br>Phone: (415) 821-0751
+                    <br>$315-345 per night, 2 night minimum
+                    <br>
+                  </p>
+                  <br>
+
+                  <a href="http://www.innsf.com/" target="_blank">
+                    <img src="img/innsf.jpg" style="height: 100px"/>
+                    <h1>Inn San Francisco</h1>
+                  </a> 
+                  <p>
+                    Address: 943 South Van Ness Avenue, San Francisco, CA 94110
+                    <br>Phone: 415-641-0188
+                    <br>$145-355 per night, 2 night minimum
+                    <br>
+                  </p>
+                  <br>
+
+                  <a href="http://www.doloresplace.com/" target="_blank">
+                    <img src="img/doloresplace.png" style="height: 100px"/>
+                    <h1>Dolores Place</h1>
+                  </a> 
+                  <p>
+                    Address: 3842 25th Street, San Francisco, CA 94114
+                    <br>Phone: (415) 824-8728
+                    <br>$139 per night, 3 night minimum
+                    <br>
+                  </p>
+                  <br>
+
+                  <a href="http://www.sfhostels.org/" target="_blank">
+                    <img src="img/sfhostel.png" style="height: 100px"/>
+                    <h1>SF Hostels</h1>
+                  </a> 
+                  <p>
+                    <a href="http://www.sfhostels.org/city-center" target="_blank">City Center</a>
+                    <br>Address: 685 Ellis Street, San Francisco, CA 94109
+                    <br>Phone: 1 (415) 474-5721
+                    <br>
+                    <br>
+                    <a href="http://www.sfhostels.org/downtown/" target="_blank">Downtown</a>
+                    <br>Address: 312 Mason Street, San Francisco, CA 94102
+                    <br>Phone: 1 (415) 788-5604
+                    <br>
+                    <br>$40 per night; shared rooms
+                  </p>
+                  <br>
+                </center>
+
+                <center><p>
+                  <a href="#" rel="modal:close" style="float:right">Close</a>
+                </p>
+                </center>
+              </div>
+
+              <a href="#US-places" rel="modal:open">
+                <img class="rsvp-button" src="img/button-accommodation.svg"/> 
+              </a> 
+              <!--  end of where to US stay -->
+
             </center>
           </div>
         </td>
@@ -151,9 +259,114 @@
                 Draycot Foliat, SN4 0HX
               </a>
             </div>
-            <center><a href="/rsvp">
-              <img class="rsvp-button" src="img/button-rsvp.svg"/>
-            </a></center>
+            <center>
+
+              <!--  what to wear modal same as US -->
+              <a href="#dress-modal" rel="modal:open">
+                <img class="rsvp-button" src="img/button-attire.svg"/> 
+              </a> 
+              <!--  end of what to wear modal -->
+
+              <a href="/rsvp">
+                <img class="rsvp-button" src="img/button-rsvp.svg"/>
+              </a>
+
+
+              <!--  where to stay UK modal -->
+
+              <div id="UK-places" style="display:none;">
+                <center>
+                  <img src="img/great-britain.svg" style="height:100px"/>
+                  <h2>Places to Stay near Sheppards Farm</h2>
+                  <br>
+<!--
+                  <a href="https://google.com">
+                    <img src="img/heart.svg" style="height: 50px"/>
+                    <h1>Diedrys cottage</h1>
+                  </a> 
+                  <p>
+                    Available the 16th till 21st £1000
+                    <br> blah lorem ipsum aa;sdfj ;aks jvnawo efaskj oasjd a fjd adfj lkdsjf i asdf siu lasdfj ;suea;ld oi lsdf oiw ;lk d9 aldk s lao iejow lad iiks id lwi li ejleki sksks fifsl ifls osf ls osf
+                  </p>
+-->
+                  <a href="http://theinnwithawell.publishpath.com/accommodation" target="_blank">
+                    <img src="img/Inn_well.jpg" style="height:100px"/>
+                    <h1>Inn with the well</h1>
+                  </a>
+                  <p>
+                    Address: Marlborough Rd, Ogbourne St George, Wiltshire, SN8 1SQ
+                    <br>Phone: +44 (0) 1672 84 14 45                
+                    <br>£65-100 per night; 4 beds available 
+                  </p>
+                  <br>
+
+                  <a href="http://www.chiseldonhouse.com/rooms.html" target="_blank">
+                    <img src="img/ChiseldonHouse.jpeg" style="height: 100px"/>
+                    <h1>Chisledon House Hotel</h1>
+                  </a> 
+                  <p>
+                    Address: New Road, Chiseldon, Swindon, Wiltshire, SN4 0NE
+                    <br>Phone: +44 (0)1793 741 010
+                    <br>£130-170 per night
+                  </p>
+                  <br>
+
+                  <a href="http://www.suninn-swindon.co.uk/accommodation.htm" target="_blank">
+                    <img src="img/sunInn.png" style="height: 100px"/>
+                    <h1>Sun Inn</h1>
+                  </a> 
+                  <p>
+                    Address: Coate, Swindon, Wiltshire SN3 6AA
+                    <br>Phone: (01793) 523292
+                    <br>£80-109 per night; 10 rooms
+                    <br>Great disabled room, very freindly, flexible rates 
+                  </p>
+                  <br>
+
+                  <a href="http://www.overtownmanor.co.uk/" target="_blank">
+                    <img src="img/overtownManor.jpg" style="height: 100px"/>
+                    <h1>Overtown Manor</h1>
+                  </a> 
+                  <p>
+                    Address: Wroughton, Swindon, Wiltshire SN4 0SH
+                    <br>Phone: 01793 814737
+                    <br>£95-150 per night; 6 rooms
+                  </p>
+                  <br>
+
+                  <a href="http://meadowbankhouse.com/rooms/" target="_blank">
+                    <img src="img/meadowhouse.png" style="height: 100px"/>
+                    <h1>Meadowbank House Bed and Breakfast</h1>
+                  </a> 
+                  <p>
+                    Address: Medbourne Lane, Liddington, Wiltshire, SN4 0EY
+                    <br>Phone: 01793 791401
+                    <br>£70-85 per night; 3 rooms
+                    <br>Very Friendly!
+                  </p>
+                  <br>
+
+                </center>
+
+                <p>
+                  <br>
+                  <br>
+
+                  <a href="#" rel="modal:close" style="float:right">Close</a>
+                </p>
+                
+              </div>
+
+              <a href="#UK-places" rel="modal:open">
+                <img class="rsvp-button" src="img/button-accommodation.svg"/> 
+              </a> 
+              <!--  end of where to UK stay -->
+
+
+
+              
+
+            </center>
           </div>
         </td>
       </tr>
@@ -178,9 +391,10 @@
         <td></td>
         <td> 
           <div class="registry-links">
-            <a href="http://www.crateandbarrel.com/gift-registry/molly-mcneil/r5422164">Crate &amp; Barrel</a>
+            <a href="http://www.crateandbarrel.com/gift-registry/molly-mcneil/r5422164" target="_blank">Crate &amp; Barrel &nbsp</a>
             ∞
-            <a href="https://www.amazon.com/registry/wedding/1K8KJ6T5LEDWW">Amazon.com</a>
+            <a href="https://www.amazon.com/registry/wedding/1K8KJ6T5LEDWW" target="_blank">&nbsp Amazon.com</a>
+            <br/>
             <br/>
           </div>
           <div class="single-malt-scotch">Single Malt Whisky :)</div>
@@ -200,6 +414,14 @@
 </center>
 
 
+
+    <!-- Modal HTML embedded directly into document 
+      <div id="ex1" style="display:none;">
+        <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+      </div>
+
+       Link to open the modal 
+      <p><a href="#ex1" rel="modal:open">Open Modal</a></p> -->
 
 
 <script>

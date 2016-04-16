@@ -9,6 +9,21 @@ div.logo {
   overflow: hidden;
 }
 
+h1 {
+  font-family: "Monrad Typewriter";
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Monrad Typewriter";
+  font-size: 18px;
+}
+
+p {
+  font-family: "Monrad Typewriter";
+  font-size: 14px;
+}
+
 section.banner {
   background-image: url(img/banner.svg);
   height: 152px;
@@ -244,6 +259,10 @@ table.date-details {
   line-height: 24px;
 }
 
+.dress-img {
+  height: 500px;
+}
+
 .footer {
   background-color: #E6E7E8;
   border-top: 3px solid #414042;
@@ -305,5 +324,8 @@ a:hover {
   text-decoration: none;
 
 }
+
+
+
 
 
