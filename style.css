@@ -191,6 +191,11 @@ section {
         src: url("./font/bohemian-typewriter.regular.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: "Monrad Overlock";
+  src: url("./font/Overlock-Regular.ttf") format('truetype');
+}
+
 body {
   margin: 0;
   background: #C8E8EA;
@@ -261,6 +266,7 @@ table.date-details {
 
 .dress-img {
   height: 300px;
+
 }
 
 .footer {
@@ -290,6 +296,10 @@ table.date-details {
   margin-top: 17px;
   margin-bottom: -20px;
   margin-right: 10px;
+}
+
+p.readtext {
+  font-family: "Monrad Overlock";
 }
 
 .registry-links {
@@ -325,7 +335,17 @@ a:hover {
 
 }
 
+.modal-content img.dress-img {
+  display: block;
+  margin: auto;
+}
 
+.modal-content p {
+  text-align: justify;
+}
 
+.modal-content p:first-letter {
+  font-size: 200%;
+}
 
 
